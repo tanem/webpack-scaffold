@@ -1,0 +1,17 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "Mucking about with webpack.",
+  "scripts": {
+    "build-dev": "./node_modules/.bin/webpack -d",
+    "build-prod": "./node_modules/.bin/webpack -p"    
+  },
+  "author": {
+    "name": "Tane Morgan",
+    "url": "http://github.com/tanem"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.4.13"
+  }
+}
