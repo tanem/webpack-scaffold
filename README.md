@@ -13,6 +13,9 @@ Mucking about with [webpack](http://webpack.github.io/).
  * Can use NPM modules
  * Support for ES6 modules
  * SASS compilation
+ * External source maps
+ * Bundle splitting
+ * Lazy loading of modules
 
 ## NPM / CommonJS
 
