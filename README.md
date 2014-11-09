@@ -1,5 +1,5 @@
 # webpack-demo
 
-Mucking about with [webpack](http://webpack.github.io/).
+*Work in progress*
 
-__Work in progress__
+Mucking about with [webpack](http://webpack.github.io/).
