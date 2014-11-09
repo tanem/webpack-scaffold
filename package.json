@@ -4,7 +4,7 @@
   "description": "Mucking about with webpack.",
   "scripts": {
     "build-dev": "./node_modules/.bin/webpack -d",
-    "build-prod": "./node_modules/.bin/webpack -p"    
+    "build-prod": "./node_modules/.bin/webpack -p"
   },
   "author": {
     "name": "Tane Morgan",
@@ -13,5 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^1.4.13"
+  },
+  "dependencies": {
+    "media-query-facade": "^1.0.15"
   }
 }
