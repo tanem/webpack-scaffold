@@ -17,7 +17,7 @@ Mucking about with [webpack](http://webpack.github.io/).
  * Lazy loading of modules :+1:
  * Mustache template handling :+1:
  * Gulp setup :question:
- * Karma setup :question:
+ * Karma setup :+1: (via [karma-webpack](https://github.com/webpack/karma-webpack))
 
 ## run
 
