@@ -25,13 +25,19 @@ Install dependencies:
 $ npm install
 ```
 
-Build for dev (or prod with `npm run build-prod`):
+Build for dev:
 
 ```sh
 $ npm run build-dev
 ```
 
-Open in a browser:
+Or prod:
+
+```sh
+$ npm run build-prod
+```
+
+Then open in a browser:
 
 ```sh
 $ open index.html
