@@ -16,6 +16,8 @@ Mucking about with [webpack](http://webpack.github.io/).
  * Bundle splitting :+1:
  * Lazy loading of modules :+1:
  * Mustache template handling :+1:
+ * Gulp setup :question:
+ * Karma setup :question:
 
 ## run
 
