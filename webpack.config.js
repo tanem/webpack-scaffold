@@ -19,7 +19,8 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.scss$/, loader: 'style!css!sass?outputStyle=expanded' }
+      { test: /\.scss$/, loader: 'style!css!sass?outputStyle=expanded' },
+      { test: /\.html$/, loader: 'mustache' }
     ]
   },
   plugins: [

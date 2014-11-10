@@ -21,4 +21,4 @@ $ npm install; npm run build-dev; open index.html
  * External source maps :+1:
  * Bundle splitting :+1:
  * Lazy loading of modules :+1:
- * Mustache template handling :question:
+ * Mustache template handling :+1:
