@@ -3,7 +3,13 @@
 *Work in progress*
 
 Mucking about with [webpack](http://webpack.github.io/).
-  
+
+## go
+
+```sh
+$ npm install; npm run build-dev; open index.html
+```
+
 ## shopping list
 
  * CSS/SASS treated as first class :+1:
