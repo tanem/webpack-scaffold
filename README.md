@@ -6,9 +6,25 @@ Mucking about with [webpack](http://webpack.github.io/).
 
 ## go
 
+Install dependencies:
+
 ```sh
-$ npm install; npm run build-dev; open index.html
+$ npm install
 ```
+
+Build for dev (or prod with `npm run build-prod`):
+
+```sh
+$ npm run build-dev
+```
+
+Open in a browser:
+
+```sh
+$ open index.html
+```
+
+Try resizing the window to see various components in action.
 
 ## shopping list
 
