@@ -4,23 +4,15 @@
 
 Mucking about with [webpack](http://webpack.github.io/).
   
-## what we need
+## shopping list
 
- * CSS treated as first class
+ * CSS/SASS treated as first class :+1:
+ * SASS compilation :+1:
  * Images treated as first class
- * Can use CommonJS modules
- * Can use AMD modules
- * Can use NPM modules
- * Support for ES6 modules
- * SASS compilation
- * External source maps
- * Bundle splitting
- * Lazy loading of modules
-
-## NPM / CommonJS
-
- * [media-query-facade](https://github.com/tanem/media-query-facade).
-
-## AMD
-
- * `./lib/logger`
+ * Can use CommonJS modules :+1:
+ * Can use AMD modules :+1:
+ * Can use NPM modules :+1:
+ * External source maps :+1:
+ * Bundle splitting :+1:
+ * Lazy loading of modules :+1:
+ * Mustache template handling
