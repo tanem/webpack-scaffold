@@ -1,8 +1,6 @@
 # webpack-scaffold
 
-*Work in progress*
-
-Mucking about with [webpack](http://webpack.github.io/).
+A little [webpack](http://webpack.github.io/) setup.
 
 ## shopping list
 
