@@ -14,7 +14,6 @@ Mucking about with [webpack](http://webpack.github.io/).
  * Lazy loading of modules :+1:
  * Mustache template handling :+1:
  * Karma setup :+1: (via [karma-webpack](https://github.com/webpack/karma-webpack))
- * Module caching to reduce build time
 
 ### nice to have
 
