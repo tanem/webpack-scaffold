@@ -1,11 +1,7 @@
 {
-  "name": "webpack-demo",
+  "name": "webpack-scaffold",
   "version": "1.0.0",
   "description": "Mucking about with webpack.",
-  "scripts": {
-    "build-dev": "./node_modules/.bin/webpack -d",
-    "build-prod": "./node_modules/.bin/webpack -p"
-  },
   "author": {
     "name": "Tane Morgan",
     "url": "http://github.com/tanem"
@@ -13,12 +9,18 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.9.0",
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-util": "^3.0.1",
+    "gulp-webpack": "^1.0.0",
     "hogan.js": "^3.0.2",
     "loader-utils": "^0.2.5",
     "mustache-loader": "^0.2.0",
+    "require-dir": "^0.1.0",
     "sass-loader": "^0.3.0",
     "style-loader": "^0.8.2",
-    "webpack": "^1.4.13"
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.6.5"
   },
   "dependencies": {
     "media-query-facade": "^1.0.15"

@@ -1,4 +1,4 @@
-# webpack-demo
+# webpack-scaffold
 
 *Work in progress*
 
@@ -6,18 +6,24 @@ Mucking about with [webpack](http://webpack.github.io/).
 
 ## shopping list
 
- * CSS/SASS treated as first class :+1:
- * SASS compilation :+1:
- * Images treated as first class :question:
+### required
+
  * Can use CommonJS modules :+1:
- * Can use AMD modules :+1:
- * Can use NPM modules :+1:
  * External source maps :+1:
  * Bundle splitting :+1:
  * Lazy loading of modules :+1:
  * Mustache template handling :+1:
- * Gulp setup :question:
  * Karma setup :+1: (via [karma-webpack](https://github.com/webpack/karma-webpack))
+ * Module caching to reduce build time
+
+### nice to have
+
+ * CSS/SASS treated as first class :+1:
+ * Images treated as first class :question:
+ * Can use CommonJS and AMD modules in the same project :+1:
+ * Gulp setup :+1:
+ * SASS compilation :+1:
+ * CSS included in bundle splitting :question:
 
 ## run
 
@@ -27,22 +33,24 @@ Install dependencies:
 $ npm install
 ```
 
-Build for dev:
+To use the webpack dev server:
 
 ```sh
-$ npm run build-dev
+$ gulp
 ```
 
-Or prod:
+Then open `http://localhost:8080/webpack-dev-server/index.html`. Try resizing the window to see various components in action.
+
+Or you can dev without the server:
 
 ```sh
-$ npm run build-prod
+$ gulp build-dev
 ```
 
-Then open in a browser:
+Then open `index.html`.
+
+To build for prod:
 
 ```sh
-$ open index.html
+$ gulp build-prod
 ```
-
-Try resizing the window to see various components in action.

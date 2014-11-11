@@ -2,7 +2,9 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
+  cache: true,
   entry: {
+    // https://github.com/webpack/webpack/issues/300
     vendor: ['jquery'],
     app: './lib/app/index.js'
   },
