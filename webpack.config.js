@@ -5,8 +5,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   cache: true,
   entry: {
-    // https://github.com/webpack/webpack/issues/300
-    vendor: ['jquery'],
+    vendor: ['jquery'], // https://github.com/webpack/webpack/issues/300
     app: './lib/app/index.js'
   },
   output: {
@@ -29,6 +28,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'mustache'
+      },
+      {
+        test: /\.(png|jpe?g)$/,
+        loader: 'url-loader?limit=8192' // inline base64 URLs for <=8k images, direct URLs for the rest
       }
     ]
   },

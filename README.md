@@ -16,7 +16,7 @@ A little [webpack](http://webpack.github.io/) setup.
 ### nice to have
 
  * CSS/SASS treated as first class :+1:
- * Images treated as first class :question:
+ * Images treated as first class :+1:
  * Can use CommonJS and AMD modules in the same project :+1:
  * Gulp setup :+1:
  * SASS compilation :+1:

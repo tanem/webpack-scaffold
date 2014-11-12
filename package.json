@@ -10,6 +10,7 @@
   "devDependencies": {
     "css-loader": "^0.9.0",
     "extract-text-webpack-plugin": "^0.3.4",
+    "file-loader": "^0.8.1",
     "gulp": "^3.8.10",
     "gulp-clean": "^0.3.1",
     "gulp-util": "^3.0.1",
@@ -20,6 +21,7 @@
     "require-dir": "^0.1.0",
     "sass-loader": "^0.3.0",
     "style-loader": "^0.8.2",
+    "url-loader": "^0.5.5",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.5"
   },
