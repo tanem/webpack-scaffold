@@ -51,3 +51,8 @@ To build for prod:
 ```sh
 $ gulp build-prod
 ```
+
+## references
+
+ * [webpack-howto](https://github.com/petehunt/webpack-howto)
+ * [webpack-with-common-libs](https://github.com/webpack/webpack-with-common-libs)
