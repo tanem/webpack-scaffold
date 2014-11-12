@@ -1,7 +1,7 @@
 {
   "name": "webpack-scaffold",
   "version": "1.0.0",
-  "description": "Mucking about with webpack.",
+  "description": "A little webpack setup.",
   "author": {
     "name": "Tane Morgan",
     "url": "http://github.com/tanem"
