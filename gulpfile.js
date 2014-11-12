@@ -1,10 +1,9 @@
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var rimraf = require('rimraf');
 var requireDir = require('require-dir');
 
-gulp.task('clean-build', function(){
-  return gulp.src('build/', { read: false })
-    .pipe(clean());
+gulp.task('clean', function(done){
+  rimraf('./build', done);
 });
 
 requireDir('./tasks');
