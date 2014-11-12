@@ -20,7 +20,8 @@ A little [webpack](http://webpack.github.io/) setup.
  * Can use CommonJS and AMD modules in the same project :+1:
  * Gulp setup :+1:
  * SASS compilation :+1:
- * CSS included in bundle splitting :question:
+ * CSS included in bundle splitting :+1:
+ * Strips dead CSS :+1:
 
 ## run
 

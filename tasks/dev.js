@@ -6,7 +6,7 @@ var baseWebpackConfig = require('../webpack.config.js');
 
 var devWebpackConfig = Object.create(baseWebpackConfig);
 
-devWebpackConfig.devtool = 'eval';
+devWebpackConfig.devtool = 'source-map';
 devWebpackConfig.debug = true;
 
 var devCompiler = webpack(devWebpackConfig);
@@ -15,7 +15,7 @@ var devCompiler = webpack(devWebpackConfig);
 // Advantage: No server required, can run app from filesystem.
 // Disadvantage: Requests are not blocked until bundle is available,
 // can serve an old app on refresh.
-gulp.task('build-dev', ['webpack:build-dev'], function(){
+gulp.task('build-dev', ['clean-build', 'webpack:build-dev'], function(){
   gulp.watch(['lib/**/*'], ['webpack:build-dev']);
 });
 

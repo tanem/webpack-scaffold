@@ -1,7 +1,6 @@
 var gulp = require('gulp');
 var webpack = require('webpack');
 var gutil = require('gulp-util');
-var clean = require('gulp-clean');
 var baseWebpackConfig = require('../webpack.config.js');
 
 var prodWebpackConfig = Object.create(baseWebpackConfig);
@@ -15,11 +14,6 @@ prodWebpackConfig.plugins = prodWebpackConfig.plugins.concat(
 var prodCompiler = webpack(prodWebpackConfig);
 
 gulp.task('build-prod', ['clean-build', 'webpack:build-prod']);
-
-gulp.task('clean-build', function(){
-  return gulp.src('build/', { read: false })
-    .pipe(clean());
-});
 
 gulp.task('webpack:build-prod', function(done){
   prodCompiler.run(function(err, stats){

@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   cache: true,
@@ -21,12 +22,19 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.scss$/, loader: 'style!css!sass?outputStyle=expanded' },
-      { test: /\.html$/, loader: 'mustache' }
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader?outputStyle=expanded')
+      },
+      {
+        test: /\.html$/,
+        loader: 'mustache'
+      }
     ]
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
-    new webpack.optimize.CommonsChunkPlugin('common.js')
+    new webpack.optimize.CommonsChunkPlugin('common', 'common.js'),
+    new ExtractTextPlugin('[name].css')
   ]
 };
