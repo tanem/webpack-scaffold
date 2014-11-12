@@ -13,7 +13,7 @@ prodWebpackConfig.plugins = prodWebpackConfig.plugins.concat(
 
 var prodCompiler = webpack(prodWebpackConfig);
 
-gulp.task('build-prod', ['clean-build', 'webpack:build-prod']);
+gulp.task('build-prod', ['clean', 'webpack:build-prod']);
 
 gulp.task('webpack:build-prod', function(done){
   prodCompiler.run(function(err, stats){

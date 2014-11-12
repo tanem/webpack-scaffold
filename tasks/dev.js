@@ -15,7 +15,7 @@ var devCompiler = webpack(devWebpackConfig);
 // Advantage: No server required, can run app from filesystem.
 // Disadvantage: Requests are not blocked until bundle is available,
 // can serve an old app on refresh.
-gulp.task('build-dev', ['clean-build', 'webpack:build-dev'], function(){
+gulp.task('build-dev', ['clean', 'webpack:build-dev'], function(){
   gulp.watch(['lib/**/*'], ['webpack:build-dev']);
 });
 
