@@ -1,31 +1,74 @@
 # webpack-scaffold
 
-A little [webpack](http://webpack.github.io/) setup.
+A little [webpack](http://webpack.github.io/) setup. It'll be used for another project that has some specific requirements.
 
-## shopping list
+## table of contents
 
-### required
+- [features](#features)
+  - [commonjs modules](#commonjs-modules)
+  - [amd modules](#amd-modules)
+  - [external source maps](#external-source-maps)
+  - [bundle splitting](#bundle-splitting)
+  - [lazy loading](#lazy-loading)
+  - [mustache templates](#mustache-templates)
+  - [karma setup](#karma-setup)
+  - [sass compilation](#sass-compilation)
+  - [image bundling](#image-bundling)
+  - [gulp setup](#gulp-setup)
+  - [vendor files](#vendor-files)
+- [running](#running)
+- [todo](#todo)
+- [references](#references)
 
- * Can use CommonJS modules :+1:
- * External source maps :+1:
- * Bundle splitting :+1:
- * Lazy loading of modules :+1:
- * Mustache template handling :+1:
- * Karma setup :+1: (via [karma-webpack](https://github.com/webpack/karma-webpack))
+## features
 
-### nice to have
+### commonjs modules
 
- * CSS/SASS treated as first class :+1:
- * Images treated as first class :+1:
- * Can use CommonJS and AMD modules in the same project :+1:
- * Gulp setup :+1:
- * SASS compilation :+1:
- * CSS included in bundle splitting :+1:
- * Strips dead CSS :+1:
+[media-query-facade](https://github.com/tanem/media-query-facade) is installed via npm. `lib/module` is a commonjs module.
 
-## run
+### amd modules
 
-Install dependencies:
+`lib/logger` is an amd module.
+
+### exernal source maps
+
+The webpack [devtool](http://webpack.github.io/docs/configuration.html#devtool) `source-map` option is used - see `tasks/dev`.
+
+### bundle splitting
+
+`lib/app/index.js` defines a [split point](http://webpack.github.io/docs/code-splitting.html#defining-a-split-point) and webpack takes care of the rest.
+
+### lazy loading
+
+[Taken care of by webpack](http://webpack.github.io/docs/code-splitting.html#chunk-loading) once you have defined a split point.
+
+### mustache templates
+
+Taken care of via the [mustache loader](https://github.com/deepsweet/mustache-loader).
+
+### karma setup
+
+Not implemented in this repo, but can be taken care of by [karma-webpack](https://github.com/webpack/karma-webpack).
+
+### sass compilation
+
+Taken care of via the [sass loader](https://github.com/jtangelder/sass-loader). 
+
+### image bundling
+
+Taken care of via the [url loader](https://github.com/webpack/url-loader). A data url is returned if the image is <= 8kb, otherwise it emits the file to the output directory setting the filename to the md5 hash of the file.
+
+### gulp setup
+
+Refer `gulpile.js` and the `tasks` directory.
+
+### vendor files
+
+See the `vendor` directory. Vendor libs are build into a separate file since it's unlikely they'll change as often as application code. Aliases are also set up in `webpack.config.js` so we don't have to refer to the full path from within modules.
+
+## running
+
+Install the dependencies:
 
 ```sh
 $ npm install
@@ -39,7 +82,7 @@ $ gulp
 
 Then open `http://localhost:8080/webpack-dev-server/index.html`. Try resizing the window to see various components in action.
 
-Or you can dev without the server:
+Or you can build and watch without the server:
 
 ```sh
 $ gulp build-dev
@@ -52,6 +95,10 @@ To build for prod:
 ```sh
 $ gulp build-prod
 ```
+
+## todo
+
+ * CSS source maps
 
 ## references
 
