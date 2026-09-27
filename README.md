@@ -1,5 +1,7 @@
 # webpack-scaffold
 
+> **Unmaintained.** This project is no longer maintained and the repository is archived.
+
 A little [webpack](http://webpack.github.io/) setup. It'll be used for another project that has some specific requirements.
 
 ## table of contents
